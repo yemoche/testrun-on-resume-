@@ -15,7 +15,7 @@ body{
 
 
     #contact-section{
-      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../imgs/contact.jpg);
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(./img/contact.jpg);
       background-size: cover;
       background-position: center;
       height: 100%;
@@ -161,18 +161,3 @@ body{
     text-decoration: none;
   }
   
-  .nav-menu .drop-down ul {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: calc(100% + 30px);
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    padding: 10px 0;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: ease all 0.3s;
-  }
-  
- 

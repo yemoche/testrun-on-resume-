@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static '/img/favicon.png'%}" rel="icon">
-  <link href="{% static 'static/img/contact.ipg' %}" rel="image">
+  <link href="{% static 'img/favicon.png'%}" rel="icon">
+  <link href="{% static 'img/contact.jpg' %}" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
@@ -27,9 +27,13 @@
   <!-- Template Main CSS File -->
   <link href="{% static '/css/demo.css' %}" rel="stylesheet">
 
-<body>
-
+<!-- <body background="{static '/img/contact.jpg' %}"> -->
+    
   <!-- ======= Header ======= -->
+   <br>
+    <div class="logo"><a href="#"><img src="{% static 'img/zuri.png' %}"></a>
+
+    </div>
   <header id="header" class="fixed-top  d-flex justify-content-center align-items-center">
 
     <nav class="nav-menu d-none d-lg-block">
@@ -38,18 +42,21 @@
         <li><a href="#"></a></li>
         <li><a href="{% url 'home' %}">Resume</a></li>
         <li><a href="{% url 'index' %}">Contact</a></li>
-
+       
       </ul>
+      
     </nav><!-- .nav-menu -->
 
 
   </header><!-- End Header -->
      <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <!-- <img src="{% static 'img/Favicon.png' %}"> -->
         <div class="hero-container">
           <h1>Matthew Akinola</h1>
           <h2>I'm a Professional Web Developer In Abuja City</h2>
           <a href="{% url 'home' %}" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+          <!-- <img src="{% static '/img/contact.jpg' %}"> -->
         </div>
    </section><!-- End Hero -->
 </body>
