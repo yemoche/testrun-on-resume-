@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome to my Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'static/img/contact.ipg' %}" rel="image">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <!-- <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/venobox/venobox.css' %}" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/demo.css' %}" rel="stylesheet">
+  <br>
+
+<main id="main">
+    <section id="resume" class="resume">
+      <div class="container">
+  
+        <!-- <div class="section-title">
+         </div> -->
+      </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Matthew Akinola</h4>
+              <p><em>Innovative and deadline-driven Website Developer with 1 year of experience handling database, designing API.</em></p>
+              <p>
+              <ul>
+                <li>Sunnyvale Estate, Gwarinpa,Abuja, Nigeria</li>
+                <li>(+234) 81-3830-9698</li>
+                <li>akinolatolulope24@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Plant Science &amp; Biotechnology(b.sc)</h4>
+                  <h5>2015 - 2019</h5>
+                  <p><em>Adekunle Ajasin University, Akugba, Ondo-state, Nigeria</em></p>
+            </div>
+            <div class="resume-item">
+              <h4> Zuri Internship</h4>
+                <h5>2021-2021</h5>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Zuri Internship</h4>
+              <h5>2021 - 2021</h5>
+              <p><em>Online Program(slack) </em></p>
+              <p>
+              <ul>
+                    <li>Handful experience on API using django REST framework </li>
+                    <li> Worked on ATM operation </li>
+                    <li>Worked on an e-wallet app alongside some team members</li>
+                    <li>Numerous experiences on Database(Sqlite) both Relational and Non- Relational(MongoDB)</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Personal Backend projects(Python)
+              </h4>
+              <h5>2020 - 2021</h5>
+              <p>
+              <ul>
+                <li>Handful experience on API using django REST framework </li>
+                <li>Numerous experiences on Database both Relational and Non- Relational</li>
+                <li>Personal building projects such as Instagram, Chat-box, Netflix</li>
+                <!-- <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
+              </ul>
+              </p>
+            </div>
+     </section>
+          </div>
+        </div>
+      </main>
+      <br>
+      <!-- <button class="submit" >Send Message</button> -->
+      <a href="{% url 'demo' %}" button type="button" class ="btn btn-primary btn-lg disable" >Back</a>

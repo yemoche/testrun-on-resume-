@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
+    <!-- Add font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Responsive Form</title>
+    </head>
+     <body>
+         
+   <!-- contact section -->
+         <section id="contact-section">
+           <div class="container">
+           	 <h2>Contact Me</h2>
+              <p>Email me for any job offer </p>
+             <div class="contact-form">
+        
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info">  Sunnyvale Estate, Gwarinpa, Abuja</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info">  +234 81 3830 9698</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info">  akinolatolulope24@Gmail.com</span>
+               </div>      
+             <form method="post" >
+                {% csrf_token %}
+               <input type="text" name="name" placeholder="Your Name" required>
+               <input type="text" name="name" placeholder="Last Name"><br>
+               <input type="Email"  name="email" placeholder="Email" required><br>
+               <input type="text" name="subject" placeholder="Subject of this message"><br>
+               <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+               <button class="submit" >Send Message</button>
+               <a href="{% url 'demo' %}" button class="submit" >Back</a>
+             </form> 
+             <!-- a href="{% url 'demo' %}" class ="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a> -->
+  
+               </div>
+             </div>
+           </div>
+         </section>
+        <script src="{% static '/js/main.js' %}"></script>
+         
+     </body>
+ </html>

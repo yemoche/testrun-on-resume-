@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome to my Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'static/img/contact.ipg' %}" rel="image">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <!-- <link href="{% static '/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/venobox/venobox.css' %}" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/demo.css' %}" rel="stylesheet">
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top  d-flex justify-content-center align-items-center">
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <!-- <li class="active"><a href="index.html">Home</a></li> -->
+        <li><a href="#"></a></li>
+        <li><a href="{% url 'home' %}">Resume</a></li>
+        <li><a href="{% url 'index' %}">Contact</a></li>
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+
+  </header><!-- End Header -->
+     <!-- ======= Hero Section ======= -->
+  <section id="hero">
+        <div class="hero-container">
+          <h1>Matthew Akinola</h1>
+          <h2>I'm a Professional Web Developer In Abuja City</h2>
+          <a href="{% url 'home' %}" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+        </div>
+   </section><!-- End Hero -->
+</body>
+</head>
+ 
+</html>
